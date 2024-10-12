@@ -31,20 +31,20 @@ public class App {
 
             stmt1.executeUpdate("DELETE FROM `v_project`.`depot` WHERE (`dep_id` = 'd1')"); // 2
 
-            // stmt1.executeUpdate("UPDATE `v_project`.`depot` SET dep_id = 'dd1' WHERE
-            // (`dep_id` = 'd1')"); //4
+            stmt1.executeUpdate("UPDATE `v_project`.`depot` SET dep_id = 'dd1' WHERE
+            (`dep_id` = 'd1')"); //4
 
-            // stmt1.executeUpdate("INSERT INTO `v_project`.`depot` VALUES ('d100',
-            // 'Chicago', 100)"); // 6
-            // stmt1.executeUpdate("INSERT INTO `v_project`.`stock` VALUES ('p1', 'd100',
-            // 100)"); // 6
+            stmt1.executeUpdate("INSERT INTO `v_project`.`depot` VALUES ('d100',
+            'Chicago', 100)"); // 6
+            stmt1.executeUpdate("INSERT INTO `v_project`.`stock` VALUES ('p1', 'd100',
+            100)"); // 6
 
-            // stmt1.executeUpdate("DELETE FROM `v_project`.`depot` WHERE (`dep_id` =
-            // 'd100')"); // reverse
-            // stmt1.executeUpdate("DELETE FROM `v_project`.`depot` WHERE (`dep_id` =
-            // 'dd1')"); //reverse
-            // stmt1.executeUpdate("DELETE FROM `v_project`.`stock` WHERE (`dep_id` =
-            // 'd100')"); //reverse
+            stmt1.executeUpdate("DELETE FROM `v_project`.`depot` WHERE (`dep_id` =
+            'd100')"); // reverse
+            stmt1.executeUpdate("DELETE FROM `v_project`.`depot` WHERE (`dep_id` =
+            'dd1')"); //reverse
+            stmt1.executeUpdate("DELETE FROM `v_project`.`stock` WHERE (`dep_id` =
+            'd100')"); //reverse
 
         } catch (SQLException e) {
 
